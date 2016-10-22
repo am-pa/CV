@@ -17,10 +17,25 @@
         android:layout_width="61dp"
         android:layout_height="68dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@mipmap/maria"
+        android:src="@drawable/ic_account_circle_black_24dp"
         />
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Maria Rajabzadeh Namaghi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:id="@+id/NameTextView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:id="@+id/DetailsTextView" />
+
+    <!--<TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -38,5 +53,5 @@
         android:id="@+id/TelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="46-70 444 97 52" />
+        android:text="46-70 444 97 52" />-->
 </LinearLayout>
