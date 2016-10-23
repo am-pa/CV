@@ -25,6 +25,7 @@ import com.example.ma.resumeapp.Fragments.HomeFragment;
 
 
 import com.example.ma.resumeapp.Fragments.LanguageSkillsFragment;
+import com.example.ma.resumeapp.Fragments.SkillsFragment;
 
 import static android.R.attr.id;
 
@@ -110,17 +111,18 @@ public class MainActivity extends AppCompatActivity
             Fragment newFragment = new HomeFragment();
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
             transaction.replace(R.id.content_main, newFragment);
-            transaction.addToBackStack(null);
             transaction.commit();
         }else if (id == R.id.nav_education) {
             Fragment newFragment = new EducationFragment();
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
             transaction.replace(R.id.content_main, newFragment);
-            transaction.addToBackStack(null);
             transaction.commit();
         }else if(id == R.id.nav_work){
         }else if(id == R.id.nav_skills){
-
+            Fragment newFragment = new SkillsFragment();
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.content_main, newFragment);
+            transaction.commit();
         }else if(id == R.id.nav_otherPrjs){
 
         }else if(id == R.id.nav_languageSkills){
@@ -137,7 +139,6 @@ public class MainActivity extends AppCompatActivity
 
         }else if(id == R.id.nav_personalInterset){
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -153,9 +154,5 @@ public class MainActivity extends AppCompatActivity
     }
 
 
- /*   public void getAddressOnMap(View view){
-        Intent intent=new Intent(MainActivity.this,MapsActivity.class);
-        startActivity(intent);
 
-    }*/
 }

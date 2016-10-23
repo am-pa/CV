@@ -126,7 +126,7 @@ public class LanguageSkillsFragment extends Fragment {
 
 
         BarDataSet barDataSet1 = new BarDataSet(valueSet, "Level");
-        barDataSet1.setColor(Color.rgb(0, 155, 0));
+        barDataSet1.setColor(Color.rgb(0, 0, 0));
 
         dataSets = new ArrayList<>();
         dataSets.add(barDataSet1);
