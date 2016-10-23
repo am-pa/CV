@@ -8,8 +8,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Cover Letter"
+        android:text="Welcome to my resume application"
         android:textColor="#000000"
-        android:id="@+id/homeID" />
-
+        android:id="@+id/homeID"
+        android:padding="25dp"
+        android:textSize="15dp"/>
 </FrameLayout>

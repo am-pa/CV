@@ -8,14 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.ma.resumeapp.CardsData;
 import com.example.ma.resumeapp.MyRecyclerViewAdapter_Skills;
 import com.example.ma.resumeapp.R;
-import com.example.ma.resumeapp.CardsData;
 
 import java.util.ArrayList;
 
 
-public class EducationFragment extends Fragment {
+public class OtherProjectsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +31,7 @@ public class EducationFragment extends Fragment {
 
     View view;
 
-    public EducationFragment() {
+    public OtherProjectsFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +41,11 @@ public class EducationFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment EducationFragment.
+     * @return A new instance of fragment OtherProjectsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static EducationFragment newInstance(String param1, String param2) {
-        EducationFragment fragment = new EducationFragment();
+    public static OtherProjectsFragment newInstance(String param1, String param2) {
+        OtherProjectsFragment fragment = new OtherProjectsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,13 +66,12 @@ public class EducationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_education, container, false);
+        view = inflater.inflate(R.layout.fragment_other_projects, container, false);
         return view;
     }
-
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view_education);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view_other_projects);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this.getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -89,4 +88,5 @@ public class EducationFragment extends Fragment {
         }
         return results;
     }
+   
 }

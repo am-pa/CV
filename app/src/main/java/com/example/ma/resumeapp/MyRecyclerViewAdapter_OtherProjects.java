@@ -11,13 +11,12 @@ import java.util.ArrayList;
 /**
  * Created by MA on 10/23/2016.
  */
-
-public class MyRecyclerViewAdapter_Skills extends RecyclerView.Adapter<MyRecyclerViewAdapter_Skills.DataObjectHolder> {
+public class MyRecyclerViewAdapter_OtherProjects extends RecyclerView.Adapter<MyRecyclerViewAdapter_OtherProjects.DataObjectHolder> {
     private static String LOG_TAG = "MyRecyclerViewAdapter_Skills";
     private ArrayList<CardsData> mDataset;
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder
-             {
+    {
         TextView label;
         TextView dateTime;
 
@@ -30,7 +29,7 @@ public class MyRecyclerViewAdapter_Skills extends RecyclerView.Adapter<MyRecycle
     }
 
 
-    public MyRecyclerViewAdapter_Skills(ArrayList<CardsData> myDataset) {
+    public MyRecyclerViewAdapter_OtherProjects(ArrayList<CardsData> myDataset) {
         mDataset = myDataset;
     }
 
@@ -57,3 +56,4 @@ public class MyRecyclerViewAdapter_Skills extends RecyclerView.Adapter<MyRecycle
     }
 
 }
+

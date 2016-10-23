@@ -25,7 +25,9 @@ import com.example.ma.resumeapp.Fragments.HomeFragment;
 
 
 import com.example.ma.resumeapp.Fragments.LanguageSkillsFragment;
+import com.example.ma.resumeapp.Fragments.OtherProjectsFragment;
 import com.example.ma.resumeapp.Fragments.SkillsFragment;
+import com.example.ma.resumeapp.Fragments.WorkFragment;
 
 import static android.R.attr.id;
 
@@ -118,13 +120,20 @@ public class MainActivity extends AppCompatActivity
             transaction.replace(R.id.content_main, newFragment);
             transaction.commit();
         }else if(id == R.id.nav_work){
+            Fragment newFragment = new WorkFragment();
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.content_main, newFragment);
+            transaction.commit();
         }else if(id == R.id.nav_skills){
             Fragment newFragment = new SkillsFragment();
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
             transaction.replace(R.id.content_main, newFragment);
             transaction.commit();
         }else if(id == R.id.nav_otherPrjs){
-
+            Fragment newFragment = new OtherProjectsFragment();
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.content_main, newFragment);
+            transaction.commit();
         }else if(id == R.id.nav_languageSkills){
             Fragment newFragment = new LanguageSkillsFragment();
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
