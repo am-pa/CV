@@ -13,35 +13,4 @@
     tools:context="com.example.ma.resumeapp.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:textSize="16dp"
-        android:text="Maria Rajabzadeh Namaghi"
-        android:id="@+id/NameTextView" />
-
-    <TextView
-        android:text="Email: Maria.Rajabzadehnamaghi.5780@student.uu.se"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:id="@+id/emailTextView"
-        android:layout_alignParentLeft="true"
-        android:textColor="#000000"
-        android:textSize="16dp"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="Tel: +46-70 444 97 52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:id="@+id/telTextView"
-        android:layout_below="@+id/emailTextView"
-        android:textColor="#000000"
-        android:textSize="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />-->
-
 </RelativeLayout>

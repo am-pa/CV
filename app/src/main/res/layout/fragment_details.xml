@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ma.resumeapp.Fragments.DetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Maria Rajabzadeh Namaghi"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/NameTextView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Tel: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TelText"
+            android:layout_alignBaseline="@+id/TelTextView"
+            android:layout_alignBottom="@+id/TelTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/TelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:autoLink="phone"
+            android:text="+46 70 444 97 52"
+            android:layout_below="@+id/EmailTextView"
+            android:layout_toRightOf="@+id/TelText"
+            android:layout_toEndOf="@+id/TelText"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:text="Email: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailText"
+            android:layout_alignBaseline="@+id/EmailTextView"
+            android:layout_alignBottom="@+id/EmailTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/EmailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:autoLink="email"
+            android:text="Maria.Rajabzadehnamaghi.5780@student.uu.se"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/NameTextView"
+            android:layout_toRightOf="@+id/EmailText"
+            android:layout_toEndOf="@+id/EmailText" />
+
+        <TextView
+            android:text="Address: Tallåsvägen 12, Lgh 1301, 806 41, Gävle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AddressText"
+            android:layout_below="@+id/TelTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/background_dark" />
+
+    </RelativeLayout>
+
+</FrameLayout>
