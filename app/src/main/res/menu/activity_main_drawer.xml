@@ -34,9 +34,6 @@
             android:id="@+id/nav_honors"
             android:icon="@drawable/ic_stars_black_24dp"
             android:title="Honors and Awards" />
-        <item
-            android:id="@+id/map"
-            android:title="Map"/>
     </group>
 
     <item android:title="Others">
