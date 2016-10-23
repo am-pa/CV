@@ -68,18 +68,29 @@
             android:layout_toRightOf="@+id/EmailText"
             android:layout_toEndOf="@+id/EmailText" />
 
+
         <TextView
-            android:text="Address: Tallåsvägen 12, Lgh 1301, 806 41, Gävle"
+            android:text="View on map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/VeiwOnMapText"
+            android:textColor="@android:color/background_dark"
+            android:clickable="true"
+            android:onClick="getAddressOnMap"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/AddressText"
+            android:layout_alignLeft="@+id/AddressText"
+            android:layout_alignStart="@+id/AddressText" />
+
+        <TextView
+            android:text="Address: Tallåsvägen 12, lgh 1301, 80641 Gävle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/AddressText"
+            android:textColor="@android:color/background_dark"
             android:layout_below="@+id/TelTextView"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="12dp"
-            android:textColor="@android:color/background_dark" />
+            android:layout_alignParentStart="true" />
 
     </RelativeLayout>
 

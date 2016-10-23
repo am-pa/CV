@@ -3,6 +3,7 @@ package com.example.ma.resumeapp;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,7 +23,10 @@ import com.example.ma.resumeapp.Fragments.DetailsFragment;
 import com.example.ma.resumeapp.Fragments.EducationFragment;
 import com.example.ma.resumeapp.Fragments.HomeFragment;
 
+
 import com.example.ma.resumeapp.Fragments.LanguageSkillsFragment;
+
+import static android.R.attr.id;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -133,6 +137,12 @@ public class MainActivity extends AppCompatActivity
 
         }else if(id == R.id.nav_personalInterset){
         }
+        else if(id == R.id.map){
+            Intent intent=new Intent(MainActivity.this,MapsActivity.class);
+            startActivity(intent);
+
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -146,5 +156,12 @@ public class MainActivity extends AppCompatActivity
         fragmentManager.beginTransaction().replace(R.id.content_main,newFragment).commit();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+    }
+
+
+    public void getAddressOnMap(View view){
+        Intent intent=new Intent(MainActivity.this,MapsActivity.class);
+        startActivity(intent);
+
     }
 }
