@@ -13,7 +13,7 @@
     tools:context="com.example.ma.resumeapp.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#000000"
@@ -42,6 +42,6 @@
         android:textColor="#000000"
         android:textSize="16dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true" />-->
 
 </RelativeLayout>

@@ -23,7 +23,7 @@
             android:icon="@drawable/ic_apps_black_24dp"
             android:title="Other Projects" />
         <item
-            android:id="@+id/nav_languageSkill"
+            android:id="@+id/nav_languageSkills"
             android:icon="@drawable/ic_language_black_24dp"
             android:title="Language Skills" />
         <item
