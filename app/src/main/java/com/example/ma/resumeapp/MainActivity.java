@@ -137,12 +137,6 @@ public class MainActivity extends AppCompatActivity
 
         }else if(id == R.id.nav_personalInterset){
         }
-        else if(id == R.id.map){
-            Intent intent=new Intent(MainActivity.this,MapsActivity.class);
-            startActivity(intent);
-
-
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -159,9 +153,9 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    public void getAddressOnMap(View view){
+ /*   public void getAddressOnMap(View view){
         Intent intent=new Intent(MainActivity.this,MapsActivity.class);
         startActivity(intent);
 
-    }
+    }*/
 }
