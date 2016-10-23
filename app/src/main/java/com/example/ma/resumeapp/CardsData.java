@@ -4,11 +4,11 @@ package com.example.ma.resumeapp;
  * Created by MA on 10/23/2016.
  */
 
-public class SkillsData {
+public class CardsData {
     private String mText1;
     private String mText2;
 
-    public SkillsData (String text1, String text2){
+    public CardsData(String text1, String text2){
         mText1 = text1;
         mText2 = text2;
     }

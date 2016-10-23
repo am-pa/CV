@@ -1,5 +1,7 @@
 package com.example.ma.resumeapp.Fragments;
 
+import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,14 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.ma.resumeapp.CardsData;
 import com.example.ma.resumeapp.MyRecyclerViewAdapter_Skills;
 import com.example.ma.resumeapp.R;
-import com.example.ma.resumeapp.CardsData;
 
 import java.util.ArrayList;
 
 
-public class EducationFragment extends Fragment {
+public class WorkFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +33,7 @@ public class EducationFragment extends Fragment {
 
     View view;
 
-    public EducationFragment() {
+    public WorkFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +43,11 @@ public class EducationFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment EducationFragment.
+     * @return A new instance of fragment WorkFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static EducationFragment newInstance(String param1, String param2) {
-        EducationFragment fragment = new EducationFragment();
+    public static WorkFragment newInstance(String param1, String param2) {
+        WorkFragment fragment = new WorkFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,13 +68,13 @@ public class EducationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_education, container, false);
+        view = inflater.inflate(R.layout.fragment_work, container, false);
         return view;
     }
 
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view_education);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.my_recycler_view_work);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this.getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -84,33 +86,36 @@ public class EducationFragment extends Fragment {
         ArrayList results = new ArrayList<CardsData>();
 
 
-        String[] array_EducationTime=new String[5];
-        String[] array_Education=new String[5];
+        String[] array_WorkTime=new String[4];
+        String[] array_Work=new String[4];
 
-        array_EducationTime[0]="Sep 2015‐ now";
-        array_EducationTime[1]="2014‐2015";
-        array_EducationTime[2]="2009 ‐ 2011";
-        array_EducationTime[3]="2005 ‐ 2009";
-        array_EducationTime[4]="2001 ‐ 2005";
-
-
-        array_Education[0]="MS student in Computer Science, Uppsala University, Uppsala, Sweden.";
-        array_Education[1]="Student in Swedish For Immigrants (SFI) Organization, Sandviken, Sweden.";
-        array_Education[2]="MS in Computer Engineering – Artificial Intelligence (GPA 17.45 out of 20), Iran University of Science\n" +
-                "and Technology, Tehran, Iran.";
-        array_Education[3]="BS in Computer Engineering – Software (GPA 16.49 out of 20), Iran University of Science and\n" +
-                "Technology, Tehran, Iran. (This university is ranked as the first university in Iran).";
-        array_Education[4]="Diploma in Mathematics and Physics (GPA 19.70 out of 20).";
+        array_WorkTime[0]="Summer 2016";
+        array_WorkTime[1]="2012‐2014";
+        array_WorkTime[2]="2011 ‐ 2012";
+        array_WorkTime[3]="Summer 2009";
 
 
+        array_Work[0]="Sandvik Coromant,Sandviken,Sweden: System Developer:Creating a web-based user interface for documentation of an application using Java,Javascript, HTML5 and CSS3.";
+        array_Work[1]="Lecturer as a member of academic staff, Computer Engineering Department, Iran University of Science\n" +
+                "and Technology, Behshahr, Iran. Some courses which I have taught:\n" +
+                "Fundamentals of C++ Programming, Advanced Programming Language, Discrete Mathematics, Artificial\n" +
+                "Intelligence, Algorithms and Data Structure, Computer Lab, Technical English";
+        array_Work[2]="Java Developer and Researcher, AFTA Co., Tehran, Iran.\n" +
+                "Android Developer, AFTA Co., Tehran, Iran.";
+        array_Work[3]="Internship, Computer and Video Games Foundation Co., Tehran, Iran.\n" +
+                "Java Programming";
 
-        for (int index = 0; index < 5; index++) {
 
-            CardsData obj = new CardsData(array_EducationTime[index],
-                    array_Education[index]);
+
+
+        for (int index = 0; index < 4; index++) {
+
+            CardsData obj = new CardsData(array_WorkTime[index],
+                    array_Work[index]);
 
             results.add(index, obj);
         }
         return results;
     }
+
 }

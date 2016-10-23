@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.ma.resumeapp.MyRecyclerViewAdapter_Skills;
 import com.example.ma.resumeapp.R;
-import com.example.ma.resumeapp.SkillsData;
+import com.example.ma.resumeapp.CardsData;
 
 import java.util.ArrayList;
 
@@ -80,8 +80,9 @@ public class SkillsFragment extends Fragment {
         mRecyclerView.setAdapter(mAdapter);
     }
 
-    private ArrayList<SkillsData> getDataSet() {
-        ArrayList results = new ArrayList<SkillsData>();
+
+    private ArrayList<CardsData> getDataSet() {
+        ArrayList results = new ArrayList<CardsData>();
 
 
        String[] array_skillTitle=new String[7];
@@ -106,8 +107,9 @@ public class SkillsFragment extends Fragment {
 
         for (int index = 0; index < 7; index++) {
 
-            SkillsData obj = new SkillsData(array_skillTitle[index],
+            CardsData obj = new CardsData(array_skillTitle[index],
                     array_skillDetail[index]);
+
             results.add(index, obj);
         }
         return results;

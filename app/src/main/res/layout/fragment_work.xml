@@ -2,14 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ma.resumeapp.Fragments.EducationFragment">
-
+    tools:context="com.example.ma.resumeapp.Fragments.WorkFragment">
 
     <RelativeLayout android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/my_recycler_view_education"
+            android:id="@+id/my_recycler_view_work"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical"/>
